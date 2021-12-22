@@ -8,7 +8,7 @@ const contact = () => {
             <div className="w-full overflow-hidden">
                 <NotANav />
             </div>
-            <div class="w-full overflow-hidden content-center">
+            <div className="w-full overflow-hidden content-center">
                 <ContactForm />
             </div>
         </div>

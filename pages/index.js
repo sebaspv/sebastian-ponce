@@ -9,7 +9,7 @@ const index = () => {
         <div className="w-full overflow-hidden">
           <NotANav />
         </div>
-        <div class="w-full overflow-hidden">
+        <div className="w-full overflow-hidden">
           <Hero />
         </div>
       </div>

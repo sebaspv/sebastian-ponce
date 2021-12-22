@@ -9,8 +9,8 @@ export const NotANav = () => {
                         title="Sebastian"
                         className="inline-flex items-center"
                     >
-                        <span class="ml-2 text-xl font-bold tracking-wide text-white">
-                            <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-600">Sebastian</span>.
+                        <span className="ml-2 text-xl font-bold tracking-wide text-white">
+                            <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-600">Sebastian</span>.
                         </span>
                     </a>
                     <ul className="flex items-center space-x-0 lg:flex color-white">
