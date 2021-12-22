@@ -14,26 +14,19 @@ export const NotANav = () => {
                         </span>
                     </a>
                     <ul className="flex items-center space-x-0 lg:flex color-white">
-                    <a
-                                href="https://www.linkedin.com/in/sebaspv"
-                                className="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
-                                aria-label="Connect with me"
-                                title="Connect with me"
-                            >
-                        <li>
-                            <a
-                                href="https://www.linkedin.com/in/sebaspv"
-                                className="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
-                                aria-label="Connect with me"
-                                title="Connect with me"
-                            >
+                        <a
+                            href="https://www.linkedin.com/in/sebaspv"
+                            className="inline-flex items-center justify-center h-12 px-3 font-medium tracking-wide text-white transition duration-200 rounded shadow-md focus:shadow-outline focus:outline-none"
+                            aria-label="Connect with me"
+                            title="Connect with me"
+                        >
+                            <li>
                                 Connect with me
-                            </a>
-                        </li>
-                        <svg className="fill-white h-5 w-5 content-center" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
+                            </li>
+                            <svg className="fill-white h-5 w-5 content-center" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 24 24"><path d="M6.23 20.23L8 22l10-10L8 2L6.23 3.77L14.46 12z"></path></svg>
                         </a>
                     </ul>
-                    
+
                     <div className="lg:hidden">
                     </div>
                 </div>

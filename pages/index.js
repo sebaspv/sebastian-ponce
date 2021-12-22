@@ -1,11 +1,18 @@
 import React from 'react'
 import Hero from "./components/Hero"
 import NotANav from "./components/NotANav"
+
 const index = () => {
   return (
     <div>
-      <NotANav />
-      <Hero />
+      <div className="flex flex-wrap overflow-hidden">
+        <div className="w-full overflow-hidden">
+          <NotANav />
+        </div>
+        <div class="w-full overflow-hidden">
+          <Hero />
+        </div>
+      </div>
     </div>
   )
 }
