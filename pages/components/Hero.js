@@ -20,6 +20,21 @@ export const Hero = () => {
                         I'm a Machine Learning developer who also focuses in web technologies like Backend and API development.
                     </p>
                 </div>
+                <div className="flex items-center md:justify-center">
+          <a
+            href="/"
+            className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white"
+          >
+              <button type="button" class="text-white bg-gradient-to-br from-yellow-300 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Contact me!</button>
+          </a>
+          <a
+            href="/"
+            aria-label=""
+            className="inline-flex items-center font-semibold text-white"
+          >
+              <button type="button" class="text-white bg-gradient-to-br from-yellow-300 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Get my CV</button>
+          </a>
+        </div>
             </div>
         </div>
     );
