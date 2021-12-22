@@ -1,5 +1,4 @@
 import NotANav from "./components/NotANav"
-import { Widget } from '@typeform/embed-react'
 import ContactForm from "./components/ContactForm"
 
 const contact = () => {
