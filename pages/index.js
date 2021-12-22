@@ -1,11 +1,11 @@
 import React from 'react'
-
-function index() {
+import Hero from "./components/Hero"
+import NotANav from "./components/NotANav"
+const index = () => {
   return (
-    <div className="font-bold text-3xl flex h-screen">
-      <div className="m-auto animate-fade-in-down">
-      Hello World!
-      </div>
+    <div>
+      <NotANav />
+      <Hero />
     </div>
   )
 }
