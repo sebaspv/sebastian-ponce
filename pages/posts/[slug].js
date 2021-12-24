@@ -19,7 +19,9 @@ export async function getStaticProps({ params }) {
     query ProductPageQuery($slug: String!) {
       product(where: { slug: $slug }) {
         name
-        content
+        content {
+          markdown
+        }
         price
       }
     }
@@ -33,7 +35,8 @@ export async function getStaticProps({ params }) {
     props: {
       product: {
         mdx: await serialize(
-          he.decode(product.content)
+          he.decode(product.content.markdown),
+          components
         ),
         ...product,
       },
