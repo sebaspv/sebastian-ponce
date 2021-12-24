@@ -67,7 +67,6 @@ const ProductPage = ({ product }) => {
     <>
       <h1>{product.name}</h1>
       <MDXRemote {...product.mdx} components={components} />
-      <p>{product.price / 100}</p>
     </>
   );
 };
