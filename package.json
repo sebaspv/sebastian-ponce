@@ -8,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/poppins": "^4.5.0",
     "@formspree/react": "^2.2.4",
     "@typeform/embed-react": "^1.2.4",
     "graphql": "14.5.4",
