@@ -8,10 +8,6 @@ const graphcms = new GraphQLClient(
   process.env.BLOG_API_URL
 );
 
-const components = {
-  h2: (props) => <h2 style={{ color: 'red' }} {...props} />
-};
-
 export async function getStaticProps({ params }) {
   const { product } = await graphcms.request(
     `
@@ -34,8 +30,7 @@ export async function getStaticProps({ params }) {
     props: {
       product: {
         mdx: await serialize(
-          he.decode(product.content.markdown),
-          components
+          he.decode(product.content.markdown)
         ),
         ...product,
       },
