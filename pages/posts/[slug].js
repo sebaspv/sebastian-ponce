@@ -3,6 +3,7 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import he from 'he';
 import NotANav from '../components/NotANav';
+import Footer from "../components/Footer";
 
 const graphcms = new GraphQLClient(
   process.env.BLOG_API_URL
@@ -60,9 +61,10 @@ const ProductPage = ({ product }) => {
   return (
     <>
       <NotANav />
-      <div className="flex flex-col items-center text-left mt-10 mx-72 space-y-4">
+      <div className="flex flex-col items-center text-left my-20 mx-72 space-y-4">
         <MDXRemote {...product.mdx}/>
       </div>
+      <Footer />
     </>
   );
 };
