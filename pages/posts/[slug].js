@@ -2,15 +2,14 @@ import { GraphQLClient } from 'graphql-request';
 import { serialize } from 'next-mdx-remote/serialize'
 import { MDXRemote } from 'next-mdx-remote'
 import he from 'he';
-import Test from '../components/Test';
+import NotANav from '../components/NotANav';
 
 const graphcms = new GraphQLClient(
-    'https://api-us-east-1.graphcms.com/v2/ckxjlw89l386k01xp5f5s3qem/master'
+  'https://api-us-east-1.graphcms.com/v2/ckxjlw89l386k01xp5f5s3qem/master'
 );
 
 const components = {
-  h2: (props) => <h2 style={{ color: 'red' }} {...props} />,
-  Test,
+  h2: (props) => <h2 style={{ color: 'red' }} {...props} />
 };
 
 export async function getStaticProps({ params }) {
@@ -65,8 +64,10 @@ export async function getStaticPaths() {
 const ProductPage = ({ product }) => {
   return (
     <>
-      <h1>{product.name}</h1>
-      <MDXRemote {...product.mdx} components={components} />
+      <NotANav />
+      <div className="flex flex-col items-center text-left mt-10 mx-72 space-y-4">
+        <MDXRemote {...product.mdx}/>
+      </div>
     </>
   );
 };

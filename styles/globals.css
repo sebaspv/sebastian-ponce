@@ -1,12 +1,15 @@
 @tailwind base;
 h1 {
-    @apply text-2xl;
+    @apply text-6xl font-black font-sans;
   }
   h2 {
-    @apply text-xl;
+    @apply text-3xl font-bold font-sans;
   }
   h3 {
-    @apply text-lg;
+    @apply text-lg font-sans;
+  }
+  p {
+    @apply text-lg font-sans;
   }
 @tailwind components;
 @tailwind utilities;
