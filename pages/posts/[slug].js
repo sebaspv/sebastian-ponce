@@ -5,7 +5,7 @@ import he from 'he';
 import NotANav from '../components/NotANav';
 
 const graphcms = new GraphQLClient(
-  'https://api-us-east-1.graphcms.com/v2/ckxjlw89l386k01xp5f5s3qem/master'
+  process.env.BLOG_API_URL
 );
 
 const components = {
