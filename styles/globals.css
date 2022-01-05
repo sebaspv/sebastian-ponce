@@ -12,7 +12,7 @@ h1 {
     @apply text-lg font-sans;
   }
   img {
-    @apply w-64;
+    @apply w-80;
     }  
 @tailwind components;
 @tailwind utilities;

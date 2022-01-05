@@ -61,7 +61,7 @@ const ProductPage = ({ product }) => {
   return (
     <>
       <NotANav />
-      <div className="flex flex-col items-center text-left my-20 mx-72 space-y-4">
+      <div className="flex flex-col items-center text-left my-10 mx-72 space-y-4">
         <MDXRemote {...product.mdx}/>
       </div>
       <Footer />
