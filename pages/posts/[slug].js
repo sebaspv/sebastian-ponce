@@ -6,7 +6,7 @@ import NotANav from '../components/NotANav';
 import Footer from "../components/Footer";
 
 const graphcms = new GraphQLClient(
-  process.env.BLOG_API_URL
+  "https://api-us-east-1.graphcms.com/v2/ckxjlw89l386k01xp5f5s3qem/master"
 );
 
 export async function getStaticProps({ params }) {

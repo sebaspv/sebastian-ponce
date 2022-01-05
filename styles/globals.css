@@ -11,6 +11,9 @@ h1 {
   p {
     @apply text-lg font-sans;
   }
+  img {
+    @apply w-64;
+    }  
 @tailwind components;
 @tailwind utilities;
 
