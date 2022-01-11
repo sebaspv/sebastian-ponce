@@ -16,5 +16,3 @@ h1 {
     }  
 @tailwind components;
 @tailwind utilities;
-
-@import "@fontsource/poppins"
