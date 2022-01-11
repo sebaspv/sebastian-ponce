@@ -1,6 +1,6 @@
-import NotANav from "./components/NotANav"
-import ContactForm from "./components/ContactForm"
-import Footer from "./components/Footer"
+import NotANav from "../components/NotANav"
+import ContactForm from "../components/ContactForm"
+import Footer from "../components/Footer"
 
 const contact = () => {
     return (
