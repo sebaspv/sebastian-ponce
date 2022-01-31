@@ -3,7 +3,7 @@ h1 {
     @apply text-6xl font-black font-sans;
   }
   h2 {
-    @apply text-3xl font-bold font-sans;
+    @apply text-5xl py-4 font-bold font-sans;
   }
   h3 {
     @apply text-lg font-sans;
@@ -12,7 +12,13 @@ h1 {
     @apply text-lg font-sans;
   }
   img {
-    @apply w-80;
-    }  
+    @apply w-fit;
+    }
+  a {
+    @apply underline;
+  }
+  blockquote {
+    @apply text-gray-600 italic;
+  }
 @tailwind components;
 @tailwind utilities;

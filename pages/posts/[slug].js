@@ -4,14 +4,20 @@ import { MDXRemote } from 'next-mdx-remote'
 import he from 'he';
 import NotANav from '../../components/NotANav';
 import Footer from "../../components/Footer";
-import { format} from 'date-fns'
+import { format } from 'date-fns'
+import mediumZoom from "medium-zoom";
+import { useEffect } from "react";
 
 const graphcms = new GraphQLClient(
   "https://api-us-east-1.graphcms.com/v2/ckxjlw89l386k01xp5f5s3qem/master"
 );
 
 const ProductPage = ({ product }) => {
+  
   const formattedDate = format(Date.parse(product.date), "MMMM do, y")
+  useEffect(() => {
+    mediumZoom("img");
+  }, []);
   return (
     <>
       <NotANav />
