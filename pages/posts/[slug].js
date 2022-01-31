@@ -7,6 +7,7 @@ import Footer from "../../components/Footer";
 import { format } from 'date-fns'
 import mediumZoom from "medium-zoom";
 import { useEffect } from "react";
+import readingTime from "reading-time";
 
 const graphcms = new GraphQLClient(
   "https://api-us-east-1.graphcms.com/v2/ckxjlw89l386k01xp5f5s3qem/master"
@@ -14,20 +15,21 @@ const graphcms = new GraphQLClient(
 
 const ProductPage = ({ product }) => {
   
-  const formattedDate = format(Date.parse(product.date), "MMMM do, y")
+  const formattedDate = format(Date.parse(product.date), "MMMM do, y");
+  const timeToRead = readingTime(product.content.text);
   useEffect(() => {
     mediumZoom("img");
   }, []);
   return (
     <>
-      <NotANav />
+      <NotANav/>
       <div className="flex flex-col items-center text-left text-6xl font-bold font-sans mt-10">
         {product.name}
       </div>
       <div className="flex flex-col items-center text-gray-600 text-2xl mt-4">
-        {formattedDate}
+        {formattedDate} · {timeToRead.text}
       </div>
-      <div className="flex flex-col items-center text-left my-10 mx-72 space-y-4">
+      <div className="flex flex-col items-center text-left my-10 mx-96 space-y-4">
         <MDXRemote {...product.mdx} />
       </div>
       <Footer />
@@ -61,6 +63,7 @@ export async function getStaticProps({ params }) {
         name
         content {
           markdown
+          text
         }
         price
         date
