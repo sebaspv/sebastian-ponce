@@ -12,7 +12,7 @@ function ContactForm() {
 					</p>
 					<a
 						className="mt-8 mb-8 flex flex-row items-center"
-						href="mailto:poncegramming@gmail.com"
+						href="mailto:sebastian@sebastianponce.co"
 					>
 						<span className="text-xl text-gray-600 font-bold">
 							sebastian@sebastianponce.co
