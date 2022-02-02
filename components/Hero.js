@@ -5,10 +5,10 @@ export const Hero = () => {
         <div className="relative bg-black">
             <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:pt-5">
                 <div className="animate-fade-in-down relative max-w-2xl sm:mx-auto sm:max-w-xl md:max-w-2xl sm:text-center ">
-                    <h2 className="mb-6 font-sans text-3xl font-black tracking-tight text-white sm:text-6xl sm:leading-none">
+                    <h2 className="mb-3 font-sans text-3xl font-black tracking-tight text-white sm:text-6xl sm:leading-none">
                         Hi! I&apos;m <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-600">Sebastian</span>.
                     </h2>
-                    <p className="mb-6 text-base text-indigo-100 md:text-lg">
+                    <p className="mb-6 text-base text-gray-200 md:text-lg">
                         I&apos;m a Machine Learning developer who also focuses in web technologies like Backend and API development.
                     </p>
                 </div>
