@@ -1,4 +1,6 @@
 import { useForm, ValidationError } from '@formspree/react';
+import toast, { Toaster } from 'react-hot-toast';
+
 function ContactForm() {
 	const [state, handleSubmit] = useForm('xoqrqgpz');
 	return (
@@ -70,7 +72,12 @@ function ContactForm() {
 					/>
 				</div>
 				<div className="md:w-1/3">
-					<button className="text-white bg-gradient-to-br from-yellow-300 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 font-medium rounded-lg text-sm px-6 py-3 text-center mr-2 mb-2" type="submit" disabled={state.submitting}>
+					<button className="text-white bg-gradient-to-br from-yellow-300 to-pink-600 hover:bg-gradient-to-bl focus:ring-4 font-medium rounded-lg text-sm px-6 py-3 text-center mr-2 mb-2" 
+					type="submit" 
+					disabled={state.submitting}
+					onClick={() => {
+						toast("Okay! Your message has been submitted.")
+					}}>
 						Submit
 					</button>
 				</div>
