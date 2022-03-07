@@ -3,6 +3,7 @@ import Hero from "../components/Hero"
 import NotANav from "../components/NotANav"
 import Feature from "../components/Feature"
 import Footer from "../components/Footer"
+import Stack from "../components/Stack"
 
 const index = () => {
   return (
@@ -16,6 +17,9 @@ const index = () => {
         </div>
         <div className="w-full overflow-hidden">
           <Feature />
+        </div>
+        <div className="w-full overflow-hidden">
+          <Stack />
         </div>
         <div className="w-full overflow-hidden">
           <Footer />
